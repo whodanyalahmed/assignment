@@ -1,0 +1,27 @@
+print("Distance calculator")
+print("-------------------")
+print("1 - S = vt")
+print("2 - s = vit +1/2a(t*t)")
+operation = input("Enter operation (1/2): ")
+if (operation == "1"):
+    v = input("Enter Velocity: ")
+    v = int(v)
+    t = input("Enter Time:")
+    t = int(t)
+    s = v*t
+    print("==========================")
+    print("Distance is \t\t"+ str(s))
+    print("==========================")
+elif (operation == "2"):
+    vi = input("Enter Initial velocity: ")
+    vi = int(vi)
+    t = input("Enter Time: ")
+    t= int(t)
+    a = input("Enter acceleration: ")
+    a = int(a)
+    S = vi*t + 1/2*a*(t*t)
+    print("============================")
+    print("Distance is \t\t"+str(S))
+    print("============================")
+else:
+    print("You had choosed and invalid operation")
